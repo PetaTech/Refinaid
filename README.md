@@ -13,7 +13,7 @@
 
 <p align="center">
   <strong>
-    <a href="#-abstract">📍 Abstract</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-contributing">🌏 Contributing</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-contact">📲 Contact</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-license">🪪 License</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://refinaid-docs.vercel.app/">🐻 Web</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://refinaid.vercel.app/"> 📚 docs</a>
+    <a href="#-abstract">📍 Abstract</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-contributing">🌏 Contributing</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-contact">📲 Contact</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-license">🪪 License</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://refinaid-docs.vercel.app/">🐻 Web</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://refinaid.vercel.app/"> 📚 Docs</a>
   </strong>
 </p>
 

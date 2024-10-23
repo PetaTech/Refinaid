@@ -11,14 +11,25 @@
   <img src="https://img.shields.io/github/stars/1chooo/refinaid?style=for-the-badge&labelColor=000" alt="Novel.sh's GitHub repo" />
 </p>
 
+<p align="center">
+  <strong>
+    <a href="#-abstract">📍 Abstract</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-contributing">🌏 Contributing</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-contact">📲 Contact</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#-license">🪪 License</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://refinaid-docs.vercel.app/">🐻 Web</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="https://refinaid.vercel.app/"> 📚 docs</a>
+  </strong>
+</p>
+
 
 # Refinaid: Bridging the Gap with AI For Everyone
+
+## 📍 Abstract
+
 Hi there 👋🏻 This is **Refinaid**. **Refinaid** is an open-source learning platform enabling everyone unfamiliar with programming languages to easily engage with AI and open the doors to the world of the future.
 
-## Getting Started
+## 🌏 Contributing
+
 Python version `python3.10.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
 
 ### Build `venv` for **MacOS**
+
 ```shell
 $ pip3 install virtualenv
 $ python3.10 -m venv venv
@@ -88,8 +99,21 @@ If you encounter any problems while contributing to this project, please report 
 > 4. Run `git merge upstream/main` to merge the updated remote version into your local copy. If there are no conflicts, the update process is complete.
 > 5. Run `git stash pop` to apply your temporarily stashed changes back to your working directory. Resolve any conflicts if necessary.
 
+## 📲 Contact
 
-## License
+> **Hugo ChunHo Lin**
+> 
+> <aside>
+>   📩 E-mail: <a href="mailto:hugo970217@gmail.com">hugo970217@gmail.com</a>
+> <br>
+>   🧳 Linkedin: <a href="https://www.linkedin.com/in/1chooo/">Hugo ChunHo Lin</a>
+> <br>
+>   👨🏻‍💻 GitHub: <a href="https://github.com/1chooo">1chooo</a>
+>    
+> </aside>
+
+## 🪪 License
+
 Released under [Apache-2.0 license](./LICENSE) by [Hugo ChunHo Lin](https://github.com/1chooo).
 
 This software can be modified and reused without restriction.

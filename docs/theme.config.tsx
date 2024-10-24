@@ -6,6 +6,11 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/1chooo/refinaid',
   },
+  head: (
+    <>
+      <link rel="icon" href="/favicon.png" type="image/png" />
+    </>
+  ),
   chat: {
     link: 'https://discord.com',
   },

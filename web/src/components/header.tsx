@@ -86,7 +86,7 @@ export default function Header() {
               <Image
                 className={`${isTop ? "h-10 w-auto" : "h-8 w-auto"}
                 block transition-all`}
-                src="https://cdn.linkscape.app/linkscape-logo.png"
+                src="/logo_white.png"
                 alt="LinkScape"
                 width={2608}
                 height={769}

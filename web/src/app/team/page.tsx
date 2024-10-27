@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const people = [
   {
     name: "Hugo ChunHo Lin",
-    role: "Founder & CEO",
+    role: "Founder & CTO",
     imageUrl: "https://avatars.githubusercontent.com/u/94162591?v=4",
     github: "https://github.com/1chooo",
   },

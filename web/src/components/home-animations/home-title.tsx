@@ -114,7 +114,7 @@ export default function HomeTitle() {
         animate="animate"
         className="px-4 py-6 text-center text-base sm:text-lg text-gh-text-secondary"
       >
-        A group of students who hack, build, and compete together.
+        Enabling everyone unfamiliar with programming languages to easily engage with AI and open the doors to the world of the future.
       </motion.h2>
     </motion.div>
   );

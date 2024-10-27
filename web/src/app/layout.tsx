@@ -8,18 +8,18 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Refinaid",
-  description: "We are a group of student hackers",
+  description: "Enabling everyone unfamiliar with programming languages to easily engage with AI and open the doors to the world of the future.",
   icons: {
     shortcut: "/favicon.png",
   },
   openGraph: {
     title: "Refinaid",
     description: "We are Refinaid.",
-    url: "https://linkscape.app",
+    url: "https://refinaid.vercel.app/",
     siteName: "Refinaid",
     images: [
       {
-        url: "https://cdn.linkscape.app/linkscape-logo.png",
+        url: "https://refinaid-docs.vercel.app/banner-thin.png",
         width: 2608,
         height: 769,
       },

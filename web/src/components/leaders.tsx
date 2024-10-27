@@ -6,10 +6,22 @@ import HomeTeamTitle from "@/src/components/home-animations/home-team-title";
 
 const people = [
   {
-    name: "Hugo ChunHo Lin",
+    name: "ChunHo (Hugo) Lin",
     role: "Founder & CTO",
     imageUrl: "https://avatars.githubusercontent.com/u/94162591?v=4",
     github: "https://github.com/1chooo",
+  },
+  {
+    name: "Reeve Wu",
+    role: "ML Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/110542858?v=4",
+    github: "https://github.com/ReeveWu",
+  },
+  {
+    name: "Vincent Li",
+    role: "ML Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/98581766?v=4",
+    github: "https://github.com/VincentLi1216",
   },
 ];
 

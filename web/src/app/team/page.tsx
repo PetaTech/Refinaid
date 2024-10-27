@@ -11,143 +11,23 @@ export const metadata: Metadata = {
 
 const people = [
   {
-    name: "Hugo ChunHo Lin",
+    name: "ChunHo (Hugo) Lin",
     role: "Founder & CTO",
     imageUrl: "https://avatars.githubusercontent.com/u/94162591?v=4",
     github: "https://github.com/1chooo",
   },
-  // {
-  //   name: "Jett Chen",
-  //   role: "Co-Founder & CTO",
-  //   imageUrl: "https://cdn.linkscape.app/JettChen.png",
-  //   github: "https://github.com/JettChenT",
-  // },
-  // {
-  //   name: "Eason Ji",
-  //   role: "Co-Founder",
-  //   imageUrl: "",
-  //   github: "",
-  // },
-  // {
-  //   name: "Meli Liu",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/MeliLiu.png",
-  //   github: "https://github.com/MeliLXT",
-  // },
-  // {
-  //   name: "Andy Chang",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/AndyChang.png",
-  //   github: "https://github.com/xiaobaizzh",
-  // },
-  // {
-  //   name: "Kai Xu",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/KaiXu.png",
-  //   github: "",
-  // },
-  // {
-  //   name: "Tim Yu",
-  //   role: "Senior Member",
-  //   imageUrl: "",
-  //   github: "",
-  // },
-  // {
-  //   name: "Snapdragon Lee",
-  //   role: "Senior Member",
-  //   imageUrl: "https://avatars.githubusercontent.com/u/61799448",
-  //   github: "https://github.com/SnapdragonLee",
-  // },
-  // {
-  //   name: "Anthony Ji",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/AnthonyJi.jpg",
-  //   github: "",
-  // },
-  // {
-  //   name: "Evoker Ma",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/EvokerMa.png",
-  //   github: "",
-  // },
-  // {
-  //   name: "Kevin Zhang",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/KevinZhang.png",
-  //   github: "https://github.com/juicyk-cn",
-  // },
-  // {
-  //   name: "Tzu-Yun Hsiao",
-  //   role: "Senior Member & Head of Design",
-  //   imageUrl: "https://cdn.linkscape.app/TzeYunHsiao.png",
-  //   github: "https://github.com/Powerlean",
-  // },
-  // {
-  //   name: "Yucheng Zou",
-  //   role: "Senior Member",
-  //   imageUrl: "",
-  //   github: "",
-  // },
-  // {
-  //   name: "Nash Sun",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/NashSun.png",
-  //   github: "https://github.com/sun-xx",
-  // },
-  // {
-  //   name: "Thedust Ye",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/Thedustye.png",
-  //   github: "https://github.com/Thedustye",
-  // },
-  // {
-  //   name: "Patirck Peng",
-  //   role: "Senior Member",
-  //   imageUrl: "",
-  //   github: "https://github.com/DDizzzy79",
-  // },
-  // {
-  //   name: "Ana Jiang",
-  //   role: "Senior Member",
-  //   imageUrl: "https://cdn.linkscape.app/AnaJiang.jpg",
-  //   github: "https://github.com/ana-jiangR",
-  // },
-  // {
-  //   name: "Evan Luo",
-  //   role: "Senior Member",
-  //   imageUrl: "https://files.ohevan.com/img/IMG_3824_best.png",
-  //   github: "https://github.com/evannotfound",
-  // },
-  // {
-  //   name: "Layla Ma",
-  //   role: "Member",
-  //   imageUrl: "",
-  //   github: "https://github.com/Marion-China",
-  // },
-  // {
-  //   name: "Newton Ngau",
-  //   role: "Member",
-  //   imageUrl: "",
-  //   github: "",
-  // },
-  // {
-  //   name: "Jaden Hou",
-  //   role: "Member",
-  //   imageUrl: "https://cdn.linkscape.app/JadenHou.png",
-  //   github: "https://github.com/InternetRamen",
-  // },
-  // {
-  //   name: "Otto Chou",
-  //   role: "Member",
-  //   imageUrl: "",
-  //   github: "https://github.com/ottochou1",
-  // },
-  // {
-  //   name: "Zigao Wang",
-  //   role: "Member",
-  //   imageUrl: "",
-  //   github: "",
-  // },
+  {
+    name: "Reeve Wu",
+    role: "ML Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/110542858?v=4",
+    github: "https://github.com/ReeveWu",
+  },
+  {
+    name: "Vincent Li",
+    role: "ML Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/98581766?v=4",
+    github: "https://github.com/VincentLi1216",
+  },
 ];
 
 export default function Team() {

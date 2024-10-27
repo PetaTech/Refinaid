@@ -56,7 +56,7 @@ export default function Leaders() {
           delay={0.1}
           className={"mt-2 text-gh-text-secondary text-lg"}
         >
-          Meet the team behind LinkScape.
+          Meet the team behind Refinaid.
         </HomeTeamTitle>
       </div>
       <div className="col-span-1 col-start-1 hidden lg:block">

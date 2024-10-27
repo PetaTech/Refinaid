@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Refinaid",
-  description: "Enabling everyone unfamiliar with programming languages to easily engage with AI and open the doors to the world of the future.",
+  description: "Bridging the Gap with AI For Everyone",
   icons: {
     shortcut: "/favicon.png",
   },

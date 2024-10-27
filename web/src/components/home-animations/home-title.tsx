@@ -114,7 +114,7 @@ export default function HomeTitle() {
         animate="animate"
         className="px-4 py-6 text-center text-base sm:text-lg text-gh-text-secondary"
       >
-        Enabling everyone unfamiliar with programming languages to easily engage with AI and open the doors to the world of the future.
+        Bridging the Gap with AI For Everyone
       </motion.h2>
     </motion.div>
   );

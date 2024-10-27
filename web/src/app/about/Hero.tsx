@@ -16,8 +16,7 @@ export default function Hero() {
         </span>
       </h1>
       <p className="py-6 text-center text-base sm:text-lg">
-        LinkScape is led by passionate students dedicated to influencing the
-        world through technology.
+        Bridging the Gap with AI For Everyone
       </p>
     </>
   );

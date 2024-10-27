@@ -26,8 +26,7 @@ export default function About() {
           </span>
         </h1>
         <p className="py-6 text-center text-base sm:text-lg">
-          LinkScape is led by passionate students dedicated to influence the
-          world through technology.
+          Bridging the Gap with AI For Everyone
         </p>
         <h2 className="mb-8 mt-8 text-center text-2xl font-bold sm:text-4xl">
           Legal Documents

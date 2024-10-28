@@ -21,6 +21,30 @@ const people = [
     imageUrl: "https://avatars.githubusercontent.com/u/98581766?v=4",
     github: "https://github.com/VincentLi1216",
   },
+  {
+    name: "Hsieh Robin",
+    role: "Frontend Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/30611888?v=4",
+    github: "https://github.com/RobinHsieh",
+  },
+  {
+    name: "Alan Li",
+    role: "Site Reliable Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/61896187?v=4",
+    github: "https://github.com/lebr0nli",
+  },
+  {
+    name: "Wang",
+    role: "Prompt Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/109240416?v=4",
+    github: "https://github.com/wangtyphoon",
+  },
+  {
+    name: "Lin",
+    role: "Prompt Engineer",
+    imageUrl: "https://avatars.githubusercontent.com/u/133863585?v=4",
+    github: "https://github.com/cylin-jimmy0708",
+  },
 ];
 
 export default function Team() {

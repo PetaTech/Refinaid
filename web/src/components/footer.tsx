@@ -29,9 +29,9 @@ export default function Footer() {
         <div className={"px-6 flex flex-col items-start sm:col-span-8"}>
           <Image
             src={
-              "https://evan.beee.top/img/38a40a6e7aef11dee616fc3373c0f1d1-72dad.svg"
+              "/logo_white.png"
             }
-            alt={"Linkscape logo"}
+            alt={"Refinaid logo"}
             width={648}
             height={2194}
             className={"w-56"}

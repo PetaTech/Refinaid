@@ -29,7 +29,7 @@ export default function Footer() {
         <div className={"px-6 flex flex-col items-start sm:col-span-8"}>
           <Image
             src={
-              "/logo_white.png"
+              "/logo.png"
             }
             alt={"Refinaid logo"}
             width={648}

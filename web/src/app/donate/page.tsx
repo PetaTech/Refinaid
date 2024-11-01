@@ -3,8 +3,8 @@ import NavBar from "@/src/components/header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LinkScape | Donate",
-  description: "Donate to LinkScape",
+  title: "Refinaid | Donate",
+  description: "Donate to Refinaid",
 };
 
 export default function Donate() {

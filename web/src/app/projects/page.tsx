@@ -6,8 +6,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "LinkScape | Projects",
-  description: "LinkScape's projects",
+  title: "Refinaid | Projects",
+  description: "Refinaid's projects",
 };
 
 const features = [

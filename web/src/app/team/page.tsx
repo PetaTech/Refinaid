@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import { FaGithub } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "LinkScape | Team",
-  description: "Meet the LinkScape team",
+  title: "Refinaid | Team",
+  description: "Meet the Refinaid team",
 };
 
 const people = [

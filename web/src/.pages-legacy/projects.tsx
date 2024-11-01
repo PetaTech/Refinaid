@@ -55,13 +55,13 @@ export default function Projects() {
                   </div>
                 ))}
                 <div className="flex flex-row">
-                  <Link href="https://github.com/LinkScapeOfficial/LinkDown/releases">
+                  <Link href="https://github.com/1chooo/refinaid/releases">
                     <button className="mr-3 mt-2 flex items-center rounded-md bg-black px-3 py-2 text-white">
                       <FaDownload className="mr-1.5 h-5 w-5" />
                       <div className="font-semibold">Download</div>
                     </button>
                   </Link>
-                  <Link href="https://github.com/LinkScapeOfficial/LinkDown">
+                  <Link href="https://github.com/1chooo/refinaid">
                     <button className="mr-3 mt-2 flex items-center rounded-md bg-black px-3 py-2 text-white">
                       <FaGithub className="mr-1.5 h-5 w-5" />
                       <div className="font-semibold">GitHub</div>

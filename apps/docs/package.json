@@ -27,7 +27,7 @@
     "next": "^14.2.7"
   },
   "devDependencies": {
-    "@types/node": "18.11.10",
+    "@types/node": "22.8.6",
     "typescript": "^5.5.4"
   }
 }

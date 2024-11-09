@@ -29,11 +29,11 @@ export default function Sponsors() {
               height={48}
             />
           </Link>
-          <Link href={"https://1password.com"}>
+          <Link href={"https://www.gradio.app/"}>
             <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://files.ohevan.com/tmp/1password-logo.svg"
-              alt="1Password"
+              className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
+              src="https://www.gradio.app/_app/immutable/assets/gradio.CHB5adID.svg"
+              alt="Gradio"
               width={158}
               height={48}
             />

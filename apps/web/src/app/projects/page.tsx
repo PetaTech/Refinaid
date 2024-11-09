@@ -1,5 +1,5 @@
-import { FaDownload, FaExchangeAlt, FaGithub } from "react-icons/fa";
-import { FaCloudArrowDown, FaArrowPointer } from "react-icons/fa6";
+import { FaDownload, FaGithub } from "react-icons/fa";
+import { FaArrowPointer, FaCloud } from "react-icons/fa6";
 import Link from "next/link";
 import NavBar from "@/src/components/header";
 import { Metadata } from "next";
@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    name: "Trained Instantly",
+    name: "Train Instantly",
     description:
-      "Intergrated with web browsers, trained your model with a single click",
+      "Integrate with web browsers and train your model with a single click",
     icon: FaArrowPointer,
   },
   {
-    name: "MP4 Format",
-    description: "No more converting to MP4, we support it natively",
-    icon: FaExchangeAlt,
+    name: "Effortless Deployment",
+    description: "Deploy the service without any hassle",
+    icon: FaCloud,
   },
   {
     name: "Open Source",

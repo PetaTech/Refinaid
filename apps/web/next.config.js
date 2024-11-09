@@ -6,6 +6,7 @@ const nextConfig = {
       "cdn.linkscape.app",
       "avatars.githubusercontent.com",
       "files.ohevan.com",
+      "github.githubassets.com",
     ],
   },
 };

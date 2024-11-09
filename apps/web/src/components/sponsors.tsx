@@ -38,10 +38,10 @@ export default function Sponsors() {
               height={48}
             />
           </Link>
-          <Link href={"https://www.twilio.com/"}>
+          <Link href={"https://github.com/"}>
             <Image
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src="https://files.ohevan.com/tmp/Twilio-logo-red.svg"
+              className="col-span-2 max-h-10 w-full object-contain sm:col-start-2 lg:col-span-1"
+              src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png"
               alt="Twilio"
               width={158}
               height={48}

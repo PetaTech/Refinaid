@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    name: "Train Instantly",
+    name: "Instant Training",
     description:
-      "Integrate with web browsers and train your model with a single click",
+      "Easily integrate with web browsers and train your model in a single click",
     icon: FaArrowPointer,
   },
   {
-    name: "Effortless Deployment",
-    description: "Deploy the service without any hassle",
+    name: "Seamless Deployment",
+    description: "Deploy your service effortlessly, with no hassle",
     icon: FaCloud,
   },
   {
     name: "Open Source",
-    description: "Source code is released to the public",
+    description: "The source code is fully available to the public",
     icon: FaGithub,
   },
 ];

@@ -2,7 +2,7 @@ import altair as alt
 import pandas as pd
 
 
-def make_plot(*args):
+def make_plot():
     # source = data.stocks()
 
     score = [0, 100, 100, 200, 200, 300, 400, 500]

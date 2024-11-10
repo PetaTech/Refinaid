@@ -18,8 +18,6 @@ if not API_KEY:
 async def respond(
     message,
     chat_history,
-    *args,
-    **kwargs,
 ):
     genai.configure(api_key=API_KEY)
 

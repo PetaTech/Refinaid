@@ -8,8 +8,6 @@ if not API_KEY:
 
 async def schdule(
     message,
-    *args,
-    **kwargs,
     ):
     generation_config = {
     "temperature": 1,

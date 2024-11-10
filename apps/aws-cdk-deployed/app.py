@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from app.playground.classifier import build_classifier_demo
 
 
-def main(*args: Any, **kwargs: Any,) -> None:
+def main(*args: Any) -> None:
     parser = argparse.ArgumentParser(
         prog="todam-ticket-system",
         description="Run the server in different modes."

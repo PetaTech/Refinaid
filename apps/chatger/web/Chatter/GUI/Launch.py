@@ -5,8 +5,6 @@ Author: @1chooo (Hugo ChunHo Lin)
 Version: v0.0.1
 """
 
-from typing import Any
-
 import gradio as gr
 
 from Chatter.ChatBot.Chat import respond
@@ -30,7 +28,7 @@ css_button = """button{
                 }"""
 
 
-def build_chatter_judge(*args: Any, **kwargs: Any) -> gr.Blocks:
+def build_chatter_judge() -> gr.Blocks:
     """構建 Chatter Judge 頁面"""
 
     # demo = gr.Blocks(title="Chatter Judge")  # 頁面標題
@@ -223,7 +221,7 @@ document.getElementById("logout").onclick = (() => {
     return demo
 
 
-def build_admin_management(*args: Any, **kwargs: Any) -> gr.Blocks:
+def build_admin_management() -> gr.Blocks:
     """構建管理面板頁面"""
 
     admin = gr.Blocks(title="Chatter Admin", css=css_button)  # 頁面標題

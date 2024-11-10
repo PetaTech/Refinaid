@@ -3,7 +3,7 @@ import gradio as gr
 from Chatter.Database.models import add_question
 
 
-def init_admin_tab(*args, **kwargs):
+def init_admin_tab():
     with gr.Blocks() as demo:
         gr.Markdown(
             """<button id=logout style="font-size:30px; font-weight:bold; text-decoration: underline; font-family:Freestyle Script;">Logout</button>"""

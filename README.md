@@ -26,7 +26,66 @@ Hi there 👋🏻 This is **Refinaid**. **Refinaid** is an open-source learning 
 
 ## 🌏 Contributing
 
+### Forking this Repository:
+
+Fork the `refinaid` repository into your own workspace.
+
+### Cloning the Repository to Your Workspace:
+
+```shell
+$ git clone git@github.com:<your_workspace_name>/refinaid.git
+```
+
+### Setting Upstream Remote:
+
+```shell
+$ git remote add upstream git@github.com:1chooo/refinaid.git
+
+$ git remote -v
+origin  git@github.com:<your_user_name>/refinaid.git (fetch)
+origin  git@github.com:<your_user_name>/refinaid.git (push)
+upstream        git@github.com:1chooo/refinaid.git (fetch)
+upstream        git@github.com:1chooo/refinaid.git (push)
+```
+### Pull Requests:
+
+If you have any valuable ideas to contribute, please create a pull request and provide details about the outstanding work you've done.
+
+### Issue Reporting:
+
+If you encounter any problems while contributing to this project, please report the issues in the [refinaid/issues](https://github.com/1chooo/refinaid/issues) section.
+
+> [!IMPORTANT]  
+> Remember to synchronize and update your repository before starting to write code each time.
+> #### Make sure to synchronize and update your repository before initiating a pull request:
+> 1. Run `git stash save` to temporarily stash your local changes.
+> 2. Run `git fetch upstream` to sync the source project with your local copy.
+> 3. Run `git checkout main` to switch to the main branch.
+> 4. Run `git merge upstream/main` to merge the updated remote version into your local copy. If there are no conflicts, the update process is complete.
+> 5. Run `git stash pop` to apply your temporarily stashed changes back to your working directory. Resolve any conflicts if necessary.
+
+## Run the Services
+
 Python version `python3.10.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
+
+> [!NOTE]
+> We are currently in the process of refactoring the codebase and updating the documentation. We are working hard to provide a better experience for our users. Only `v0` is available for now.
+
+### Clone the Repository
+
+Make sure you have `git` installed on your machine. If not, you can download it [here](https://git-scm.com/downloads).
+
+
+```shell
+$ git clone git@github.com:<your_user_name>/refinaid.git
+
+# If you want to access to Simple AI
+$ cd refinaid/apps/v0/simple-ai
+
+# If you want to access to Chatger
+$ cd refinaid/apps/v0/chatger
+```
+
 
 ### Build `venv` for **MacOS**
 
@@ -61,43 +120,6 @@ $ ./build.sh
 # or
 $ uvicorn main:app --host 127.0.0.1 --port 5002
 ```
-
-## Collaboration Guidelines
-### Forking this Repository:
-
-Fork the `refinaid` repository into your own workspace.
-
-### Cloning the Repository to Your Workspace:
-
-```shell
-$ git clone git@github.com:<your_workspace_name>/refinaid.git
-```
-
-### Setting Upstream Remote:
-```shell
-$ git remote add upstream git@github.com:1chooo/refinaid.git
-
-$ git remote -v
-origin  git@github.com:<your_user_name>/refinaid.git (fetch)
-origin  git@github.com:<your_user_name>/refinaid.git (push)
-upstream        git@github.com:1chooo/refinaid.git (fetch)
-upstream        git@github.com:1chooo/refinaid.git (push)
-```
-### Pull Requests:
-If you have any valuable ideas to contribute, please create a pull request and provide details about the outstanding work you've done.
-
-### Issue Reporting:
-If you encounter any problems while contributing to this project, please report the issues in the [refinaid/issues](https://github.com/1chooo/refinaid/issues) section.
-
-### Important Notes:
-> [!IMPORTANT]  
-> Remember to synchronize and update your repository before starting to write code each time.
-> #### Make sure to synchronize and update your repository before initiating a pull request:
-> 1. Run `git stash save` to temporarily stash your local changes.
-> 2. Run `git fetch upstream` to sync the source project with your local copy.
-> 3. Run `git checkout main` to switch to the main branch.
-> 4. Run `git merge upstream/main` to merge the updated remote version into your local copy. If there are no conflicts, the update process is complete.
-> 5. Run `git stash pop` to apply your temporarily stashed changes back to your working directory. Resolve any conflicts if necessary.
 
 ## 📲 Contact
 

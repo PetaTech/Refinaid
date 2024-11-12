@@ -6,12 +6,13 @@ Version: v0.1.1
 '''
 
 import os
+from pathlib import Path
 
+import uvicorn
 from app.utils.build_playground import build_and_mount_playground
-from fastapi import Depends, FastAPI, Form, HTTPException, Request
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 
 app = FastAPI(
     title="SIMPLE AI",
@@ -25,10 +26,6 @@ app.mount(
     "/static", 
     StaticFiles(directory="static"), 
     name="static",
-)
-
-templates = Jinja2Templates(
-    directory="templates",
 )
 
 app = build_and_mount_playground(
@@ -45,99 +42,13 @@ app = build_and_mount_playground(
     "/classifier",
 )
 
-@app.get("/", response_class=HTMLResponse)
-async def page_overview(request: Request):
-    return templates.TemplateResponse(
-        "index.html", 
-        {"request": request},
-    )
-
-@app.get("/project_docs", response_class=HTMLResponse)
-async def page_project_docs(request: Request):
-    return templates.TemplateResponse(
-        "docs.html", 
-        {"request": request},
-    )
-
-@app.get("/login", response_class=HTMLResponse)
-async def page_login(request: Request, ):
-    return templates.TemplateResponse(
-        f"login.html", 
-        {"request": request},
-    )
-
-@app.get("/setting", response_class=HTMLResponse)
-async def page_setting(request: Request, ):
-    return templates.TemplateResponse(
-        f"setting.html", 
-        {"request": request},
-    )
-
-@app.get("/signup", response_class=HTMLResponse)
-async def page_signup(request: Request, ):
-    return templates.TemplateResponse(
-        f"signup.html", 
-        {"request": request},
-    )
-
-@app.get("/about_us", response_class=HTMLResponse)
-async def page_about_us(request: Request, ):
-    return templates.TemplateResponse(
-        f"about_us.html", 
-        {"request": request},
-    )
-
-@app.get("/license", response_class=HTMLResponse)
-async def page_license(request: Request, ):
-    return templates.TemplateResponse(
-        f"license.html", 
-        {"request": request},
-    )
-
-@app.get("/teaching", response_class=HTMLResponse)
-async def page_teaching(request: Request, ):
-    return templates.TemplateResponse(
-        f"teaching.html", 
-        {"request": request},
-    )
-
-@app.get("/help", response_class=HTMLResponse)
-async def page_help(request: Request, ):
-    return templates.TemplateResponse(
-        f"help.html", 
-        {"request": request},
-    )
-
-@app.get("/settings", response_class=HTMLResponse)
-async def page_settings(request: Request, ):
-    return templates.TemplateResponse(
-        f"settings.html", 
-        {"request": request},
-    )
-
-@app.get("/orders", response_class=HTMLResponse)
-async def page_orders(request: Request, ):
-    return templates.TemplateResponse(
-        f"orders.html", 
-        {"request": request},
-    )
-
-@app.get("/playgrounds_guideline", response_class=HTMLResponse)
-async def page_playgrounds_introduction(request: Request, ):
-    return templates.TemplateResponse(
-        f"playgrounds_guideline.html", 
-        {"request": request},
-    )
+@app.get("/")
+def hello_world() -> dict[str, str]:
+    return {"message": "Hello, Simple AI"}
 
 @app.get('/favicon.ico', include_in_schema=False)
 async def favicon() -> FileResponse:
-    return FileResponse(
-        './static/favicon.ico',
-    )
-
-
-import uvicorn
-
+    return FileResponse(Path('static') / 'favicon.ico',)
 
 def main() -> None:
     uvicorn.run(

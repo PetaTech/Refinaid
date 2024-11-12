@@ -30,6 +30,7 @@ def train():
         dirname(abspath(__file__)),
         '..',
         '..',
+        '..',
         'model', 
         'plum_prediction.pkl'
     )

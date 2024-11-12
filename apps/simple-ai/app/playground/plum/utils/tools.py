@@ -91,6 +91,7 @@ def call_model(StnPres, StnPresMax, StnPresMin, T, Tmax, Tmin, RH, RHmin, WS, WD
         dirname(abspath(__file__)),
         '..',
         '..',
+        '..',
         'model', 
         'plum_prediction.pkl'
     )

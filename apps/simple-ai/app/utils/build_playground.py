@@ -25,6 +25,9 @@ def build_and_mount_playground(
     else:
         raise ValueError("Invalid playground name")
     
+    if playground is None:
+        raise ValueError(f"Playground creation failed for {playground_name}")
+    
     favicon_path = "." + os.sep + "static" + os.sep + favicon_file
     playground.favicon_path = favicon_path
     app = gr.mount_gradio_app(app, playground, path=path)

@@ -5,9 +5,11 @@ Author: @1chooo(Hugo ChunHo Lin)
 Version: v0.1.4
 '''
 
+from typing import Tuple
+
 import gradio as gr
 from Refinaid.Playground.Classifier.Information import PageContent
-from typing import Any, Tuple
+
 
 class TrainingComponent:
 
@@ -19,8 +21,6 @@ class TrainingComponent:
 
     def get_training_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown
         ]:
@@ -34,8 +34,6 @@ class TrainingComponent:
     
     def get_picked_dataset_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown, 
             gr.Dataframe,
@@ -60,8 +58,6 @@ class TrainingComponent:
     
     def get_model_dropdown_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Dropdown
         ]:
@@ -82,8 +78,6 @@ class TrainingComponent:
     
     def get_decision_tree_classifer_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown,
             gr.Dropdown,
@@ -162,8 +156,6 @@ class TrainingComponent:
 
     def get_k_neighbors_classifier_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown, 
             gr.Slider, 
@@ -215,8 +207,6 @@ class TrainingComponent:
     
     def get_training_btn_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Button,
         ]:
@@ -230,8 +220,6 @@ class TrainingComponent:
     
     def get_training_results_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown, 
             gr.Dataframe,
@@ -256,8 +244,6 @@ class TrainingComponent:
     
     def get_training_results_plot_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Plot, 
             gr.Plot,

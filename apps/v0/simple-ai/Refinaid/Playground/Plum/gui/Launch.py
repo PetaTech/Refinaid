@@ -6,7 +6,6 @@ Version: v0.0.6
 '''
 
 import gradio as gr
-from typing import Any
 import textwrap
 from Refinaid.Playground.Plum.gui.Dashboard import generate_playground
 from Refinaid.Playground.Plum.gui.Dashboard import generate_data_process
@@ -38,7 +37,7 @@ def build_plum_playground(confusion, accuracy, recall, precision, proba):
 
     return demo
 
-def heading(*args: Any, **kwargs: Any) -> gr.Markdown:
+def heading() -> gr.Markdown:
     title = '梅雨還是沒雨？'
     descriptions = textwrap.dedent(
     """

@@ -5,14 +5,15 @@ Author: @1chooo(Hugo ChunHo Lin)
 Version: v0.0.1
 '''
 
-from Refinaid.Action.ML_configurations import DatasetConfig
-from Refinaid.Action.ML_configurations import DecisionTreeModelConfig
-from Refinaid.Rule.Print import AutoPrint
 import textwrap
-from typing import Any
+
+from Refinaid.Action.ML_configurations import (DatasetConfig,
+                                               DecisionTreeModelConfig)
+from Refinaid.Rule.Print import AutoPrint
+
 
 @AutoPrint
-def get_scripts_head(*args: Any, **kwargs: Any) -> str:
+def get_scripts_head() -> str:
     scripts_head = textwrap.dedent(
     """
     Add the header for every script files:
@@ -29,7 +30,7 @@ def get_scripts_head(*args: Any, **kwargs: Any) -> str:
     return scripts_head
 
 @AutoPrint
-def get_dataset_naming(*args: Any, **kwargs: Any) -> str:
+def get_dataset_naming() -> str:
     dataset_naming = textwrap.dedent(
     """
     Dataset naming rule:
@@ -45,7 +46,7 @@ def get_dataset_naming(*args: Any, **kwargs: Any) -> str:
     return dataset_naming
 
 @AutoPrint
-def get_dataset_config_example(*args: Any, **kwargs: Any) -> str:
+def get_dataset_config_example() -> str:
     config = DatasetConfig(
         dataset="Titanic",
         select_col=[
@@ -73,7 +74,7 @@ def get_dataset_config_example(*args: Any, **kwargs: Any) -> str:
     return dataset_config_example
 
 @AutoPrint
-def get_decision_tree_config_example(*args: Any, **kwargs: Any) -> str:
+def get_decision_tree_config_example() -> str:
     config = DecisionTreeModelConfig(
         criterion="gini", 
         min_samples_split=2, 

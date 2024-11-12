@@ -7,7 +7,7 @@ Version: v0.1.4
 
 import gradio as gr
 from Refinaid.Playground.Classifier.Information import PageContent
-from typing import Any
+
 
 class PageHeader:
 
@@ -17,22 +17,14 @@ class PageHeader:
         ) -> None:
         self.page_content = page_content
 
-    def get_home_header(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> gr.Markdown:
+    def get_home_header(self,) -> gr.Markdown:
         our_heading = gr.Markdown(
             self.page_content.home_header,
         )
 
         return our_heading
 
-    def get_preprocessing_header(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> gr.Markdown:
+    def get_preprocessing_header(self,) -> gr.Markdown:
         our_preprocessing_header = gr.Markdown(
             self.page_content.preprocessing_header
         )

@@ -5,10 +5,12 @@ Author: @1chooo(Hugo ChunHo Lin)
 Version: v0.1.4
 '''
 
-import gradio as gr
-from Refinaid.Playground.Classifier.Information import PageContent
 from typing import Any, Tuple
+
+import gradio as gr
 from Refinaid.Action.Load import get_dataframe
+from Refinaid.Playground.Classifier.Information import PageContent
+
 
 class PreprocessingComponent:
     
@@ -18,11 +20,7 @@ class PreprocessingComponent:
         ) -> None:
         self.page_content = page_content
 
-    def get_dataset_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_dataset_info(self, ) -> Tuple[
             gr.Markdown, 
             gr.Dropdown
         ]:
@@ -43,11 +41,7 @@ class PreprocessingComponent:
             selected_dataset_name
         )
     
-    def get_select_mutiple_parameters_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_select_mutiple_parameters_info(self, ) -> Tuple[
             gr.Markdown, 
             gr.Dropdown
         ]:
@@ -75,11 +69,7 @@ class PreprocessingComponent:
             select_mutiple_parameters_dropdown
         )
     
-    def get_missing_values_handling_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_missing_values_handling_info(self, ) -> Tuple[
             gr.Markdown, 
             gr.Radio
         ]:
@@ -101,11 +91,7 @@ class PreprocessingComponent:
             missing_value_checkbox
         )
 
-    def get_data_scale_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_data_scale_info(self, ) -> Tuple[
             gr.Markdown, 
             gr.Radio
         ]:
@@ -129,11 +115,7 @@ class PreprocessingComponent:
             data_scale_dropdown
         )
     
-    def get_data_split_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_data_split_info(self, ) -> Tuple[
             gr.Markdown, 
             gr.Slider, 
             gr.Slider, 
@@ -175,11 +157,7 @@ class PreprocessingComponent:
             testing_slider
         )
 
-    def get_submit_dataset_setting_btn(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_submit_dataset_setting_btn(self, ) -> Tuple[
             gr.Button
         ]:
 
@@ -191,11 +169,7 @@ class PreprocessingComponent:
             submit_dataset_setting_btn
         )
     
-    def get_preprocessing_visulize_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_preprocessing_visulize_info(self, ) -> Tuple[
             gr.Markdown, 
             gr.ScatterPlot,
         ]:
@@ -220,11 +194,7 @@ class PreprocessingComponent:
             preprocessing_visulize_scatter_plot
         )
     
-    def get_preprocessing_visualize_axis_info(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> Tuple[
+    def get_preprocessing_visualize_axis_info(self, ) -> Tuple[
             gr.Dropdown, 
             gr.Dropdown
         ]:

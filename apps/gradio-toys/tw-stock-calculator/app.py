@@ -3,8 +3,7 @@ from typing import Any
 import gradio as gr
 
 
-def build_tw_stock_calculator(
-    *args: Any, **kwargs: Any,) -> gr.Blocks:
+def build_tw_stock_calculator() -> gr.Blocks:
 
     demo = gr.Blocks(
         title='Trade Tracker ™️',

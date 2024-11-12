@@ -5,15 +5,9 @@ Author: @1chooo(Hugo ChunHo Lin)
 Version: v0.1.4
 '''
 
-from typing import Any, Tuple
-
 class PageContent:
 
-    def __init__(
-            self, 
-            *args: Any, 
-            **kwargs: Any,
-        ) -> None:
+    def __init__(self) -> None:
 
         self.home_header = """\
         <body>

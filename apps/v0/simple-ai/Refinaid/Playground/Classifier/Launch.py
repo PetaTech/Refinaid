@@ -6,19 +6,18 @@ Version: v0.1.4
 '''
 
 import gradio as gr
-from Refinaid.Utils.Listener import background_listener
-from Refinaid.Playground.Classifier.Information import PageContent
 from Refinaid.Playground.Classifier.Dashborad.Header import PageHeader
-from Refinaid.Playground.Classifier.Dashborad.Preprocessing import PreprocessingComponent
+from Refinaid.Playground.Classifier.Dashborad.Preprocessing import \
+    PreprocessingComponent
 from Refinaid.Playground.Classifier.Dashborad.Training import TrainingComponent
-from Refinaid.Playground.Classifier.Dashborad.TrainingHistory import TrainingHistoryComponent
+from Refinaid.Playground.Classifier.Dashborad.TrainingHistory import \
+    TrainingHistoryComponent
 from Refinaid.Playground.Classifier.Example import PreprocessingExample
-from typing import Any
+from Refinaid.Playground.Classifier.Information import PageContent
+from Refinaid.Utils.Listener import background_listener
 
-def build_classifier_playground(
-        *args: Any, 
-        **kwargs: Any,
-    ) -> gr.Blocks:
+
+def build_classifier_playground() -> gr.Blocks:
 
     page_content = PageContent()
     page_header = PageHeader(page_content)

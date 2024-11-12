@@ -5,9 +5,11 @@ Author: @1chooo(Hugo ChunHo Lin)
 Version: v0.1.4
 '''
 
+from typing import Tuple
+
 import gradio as gr
 from Refinaid.Playground.Classifier.Information import PageContent
-from typing import Any, Tuple
+
 
 class TrainingHistoryComponent:
 
@@ -19,8 +21,6 @@ class TrainingHistoryComponent:
 
     def get_history_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown
         ]:
@@ -32,8 +32,6 @@ class TrainingHistoryComponent:
     
     def get_history_training_info(
             self, 
-            *args: Any, 
-            **kwargs: Any,
         ) -> Tuple[
             gr.Markdown, 
             gr.Dataframe

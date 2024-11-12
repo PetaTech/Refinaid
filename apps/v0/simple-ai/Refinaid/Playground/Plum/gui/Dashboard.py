@@ -5,16 +5,17 @@ Author: @1chooo(Hugo ChunHo Lin)
 Version: v0.0.6
 '''
 
-import gradio as gr
-from typing import Any
 import textwrap
-from Refinaid.Playground.Plum.Utils.Tools import get_predict_result
-from Refinaid.Playground.Plum.gui.code_value import *
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
 
-def generate_playground(*args: Any, **kwargs: Any):
+import gradio as gr
+import matplotlib.pyplot as plt
+import pandas as pd
+import seaborn as sns
+from Refinaid.Playground.Plum.gui.code_value import *
+from Refinaid.Playground.Plum.Utils.Tools import get_predict_result
+
+
+def generate_playground():
     with gr.Row() as playground:
         gr.Markdown(
             textwrap.dedent(
@@ -118,7 +119,7 @@ def generate_playground(*args: Any, **kwargs: Any):
         )
     return playground
 
-def generate_data_process(*args: Any, **kwargs: Any):
+def generate_data_process():
     with gr.Row() as data_process:
         gr.Markdown(f"# 模型訓練資料遇處理過程演變")
     with gr.Row() as data_process:
@@ -184,7 +185,7 @@ def generate_data_process(*args: Any, **kwargs: Any):
 
     return data_process
 
-def generate_trained_process(*args: Any, **kwargs: Any):
+def generate_trained_process():
     with gr.Row() as trained_process:
         gr.Markdown(f"# 模型訓練處理過程演變")
     with gr.Row() as trained_process:
@@ -257,7 +258,7 @@ def generate_trained_results(confusion, accuracy, recall, precision, proba):
 
     return trained_result
 
-def generate_motivation(*args: Any, **kwargs: Any):
+def generate_motivation():
     with gr.Row() as motivation:
         gr.Markdown(
         """

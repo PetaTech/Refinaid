@@ -6,15 +6,16 @@ Version: v0.1.4
 '''
 
 import gradio as gr
-from Refinaid.Playground.Classifier.Dashborad.Header import PageHeader
-from Refinaid.Playground.Classifier.Dashborad.Preprocessing import \
+
+from app.playground.classifier.dashboard.header import PageHeader
+from app.playground.classifier.dashboard.pre_processing import \
     PreprocessingComponent
-from Refinaid.Playground.Classifier.Dashborad.Training import TrainingComponent
-from Refinaid.Playground.Classifier.Dashborad.TrainingHistory import \
+from app.playground.classifier.dashboard.training import TrainingComponent
+from app.playground.classifier.dashboard.training_history import \
     TrainingHistoryComponent
-from Refinaid.Playground.Classifier.Example import PreprocessingExample
-from Refinaid.Playground.Classifier.Information import PageContent
-from Refinaid.Utils.Listener import background_listener
+from app.playground.classifier.example import PreprocessingExample
+from app.playground.classifier.information import PageContent
+from app.utils.listener import background_listener
 
 
 def build_classifier_playground() -> gr.Blocks:
@@ -27,7 +28,7 @@ def build_classifier_playground() -> gr.Blocks:
     preprocessing_example = PreprocessingExample()
     
     demo = gr.Blocks(
-        title='Playgrounds - Classifier',
+        title='playgrounds - classifier',
     )
 
     with demo:
@@ -97,7 +98,7 @@ def build_classifier_playground() -> gr.Blocks:
                     ) = training_component.get_picked_dataset_info()    
                 with gr.Column():
                     model_dropdown = training_component.get_model_dropdown_info()
-                    # Decision Tree Classifier
+                    # Decision Tree classifier
                     (
                         decision_tree_classifer_title, 
                         decision_tree_classifer_criterion_dropdown,

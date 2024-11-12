@@ -64,7 +64,7 @@ If you encounter any problems while contributing to this project, please report 
 > 4. Run `git merge upstream/main` to merge the updated remote version into your local copy. If there are no conflicts, the update process is complete.
 > 5. Run `git stash pop` to apply your temporarily stashed changes back to your working directory. Resolve any conflicts if necessary.
 
-## Run the Services
+## 🤖 Run the Services
 
 Python version `python3.10.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
 

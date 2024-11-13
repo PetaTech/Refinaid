@@ -66,7 +66,7 @@ If you encounter any problems while contributing to this project, please report 
 
 ## 🤖 Run the Services
 
-Python version `python3.10.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
+Python version `python3.11.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
 
 > [!NOTE]
 > We are currently in the process of refactoring the codebase and updating the documentation. We are working hard to provide a better experience for our users. Only `v0` is available for now.
@@ -80,7 +80,7 @@ Make sure you have `git` installed on your machine. If not, you can download it 
 $ git clone git@github.com:<your_user_name>/refinaid.git
 
 # If you want to access to Simple AI
-$ cd refinaid/apps/v0/simple-ai
+$ cd refinaid/apps/simple-ai
 
 # If you want to access to Chatger
 $ cd refinaid/apps/v0/chatger
@@ -91,7 +91,7 @@ $ cd refinaid/apps/v0/chatger
 
 ```shell
 $ pip3 install virtualenv
-$ python3.10 -m venv venv
+$ python3.11 -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ deactivate
@@ -101,24 +101,22 @@ $ rm -rf venv     # remove the venv
 ### Build `venv` for Windows
 ```shell
 $ pip install virtualenv
-$ python3.10 -m venv venv
+$ python3.11 -m venv venv
 $ venv\Scripts\activate
 $ pip install -r requirements.txt
 $ deactivate
 $ rmdir /s venv     # remove the venv
 ```
-### Build Docs
-```shell
-$ mkdocs server
-$ mkdocs build
-```
 
 ### Run web app
 ```shell
-$ ./build.sh
+$ ./scripts/build.sh
 
-# or
-$ uvicorn main:app --host 127.0.0.1 --port 5002
+# run with uvicorn
+$ uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+
+# We also support python script to run the app
+$ python app.py --prod --port 8080
 ```
 
 ## 📲 Contact

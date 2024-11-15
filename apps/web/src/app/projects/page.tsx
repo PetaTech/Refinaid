@@ -76,7 +76,7 @@ export default function Projects() {
               </div>
             </div>
             <Image
-              className="hidden w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 md:block lg:-ml-0"
+              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 md:block lg:-ml-0"
               src="/simple-ai.png"
               width={1113}
               height={626}

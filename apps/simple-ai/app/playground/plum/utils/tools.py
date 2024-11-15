@@ -117,7 +117,7 @@ def get_predict_result(StnPres, StnPresMax, StnPresMin, T, Tmax, Tmin, RH, RHmin
 
     result = result[0]
 
-    if result == 1.:
+    if abs(result - 1.0) < 1e-9:
         prediction = f'會下雨哦！'
         confidence = f'{result_probability[0, 0]:.10f}'
     else:

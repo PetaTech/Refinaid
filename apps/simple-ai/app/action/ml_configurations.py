@@ -65,7 +65,7 @@ class KNNModelConfig:
 
 class SVMModelConfig:
     def __init__(self, C: float, kernel: str, degree: int, gamma: str, coef0: float):
-        if C != 0.0:
+        if abs(C) > 1e-9:
             self.C = C
         self.kernel = kernel                    # ‘poly’, ‘rbf’, ‘sigmoid’  default=’rbf’
         if self.kernel == 'poly':

@@ -1,12 +1,18 @@
-FROM public.ecr.aws/docker/library/python:3.11-slim-buster
+FROM python:3.10-slim-buster
 
-COPY --from=public.ecr.aws/awsguru/aws-lambda-adapter:0.8.3 /lambda-adapter /opt/extensions/lambda-adapter
-ENV PORT=8080
-WORKDIR /var/task
+COPY ./requirements.txt /app/
 
-COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
+WORKDIR /app
 
-COPY . .
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
 
-CMD ["python3", "app.py", "--prod", "--port", "8080"]
+RUN useradd -m chatter
+
+COPY . /app/
+
+RUN chown -R chatter:chatter /app
+
+USER chatter
+
+CMD ["uvicorn", "Chatter.App.App:app", "--host", "0.0.0.0", "--port", "5002"]

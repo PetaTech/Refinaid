@@ -14,6 +14,14 @@ export default function About() {
       <NavBar />
       <div className="mb-20 mt-32 flex flex-col items-center justify-center sm:mb-64 sm:mt-36">
         <Hero />
+        {/* <LegalDoc
+          hrefPdf="https://cdn.linkscape.app/Certificate_of_Status.pdf"
+          imgSrc="https://cdn.linkscape.app/Certificate_of_Status.png"
+          imgWidth={250}
+          imgHeight={933}
+          imgAlt=""
+          text="Certificate of Status"
+        /> */}
       </div>
     </>
   );

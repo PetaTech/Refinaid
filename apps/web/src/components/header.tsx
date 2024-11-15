@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { FaDiscord, FaGithub, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
@@ -32,11 +33,10 @@ export default function Header() {
 
   return (
     <header
-      className={`${
-        isTop
-          ? "bg-transparent border-b border-transparent shadow-none py-3"
-          : " bg-white bg-opacity-70 backdrop-blur-lg border-b border-black/10 backdrop-saturate-[85%] py-1"
-      }
+      className={`${isTop
+        ? "bg-transparent border-b border-transparent shadow-none py-3"
+        : " bg-white bg-opacity-70 backdrop-blur-lg border-b border-black/10 backdrop-saturate-[85%] py-1"
+        }
         
          fixed left-0 top-0 w-screen z-50 transition-all`}
     >
@@ -100,11 +100,10 @@ export default function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`text-gh-gray-7 ${
-                        pathname !== item.href
-                          ? "hover:bg-blue-600/20"
-                          : "hover:text-gh-text-primary"
-                      } rounded-md px-2.5 py-2 text-sm font-medium transition-all`}
+                      className={`text-gh-gray-7 ${pathname !== item.href
+                        ? "hover:bg-blue-600/20"
+                        : "hover:text-gh-text-primary"
+                        } rounded-md px-2.5 py-2 text-sm font-medium transition-all`}
                     >
                       <p className={"relative px-0.5"}>
                         {item.name}
@@ -145,16 +144,15 @@ export default function Header() {
 
       {open && (
         <div className="sm:hidden">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="space-y-1 px-2 pb-3 pt-2 bg-white shadow-lg"> {/* Mobile menu container */}
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`${
-                  item.current
-                    ? "bg-gray-900 text-white"
-                    : "text-black hover:bg-blue-500 hover:text-white"
-                } block rounded-md px-3 py-2 text-base font-medium`}
+                className={`${item.current
+                  ? "bg-gray-900 text-white"
+                  : "text-black hover:bg-blue-500 hover:text-white"
+                  } block rounded-md px-3 py-2 text-base font-medium`}
                 aria-current={item.current ? "page" : undefined}
               >
                 {item.name}

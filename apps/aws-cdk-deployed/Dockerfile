@@ -9,4 +9,4 @@ RUN python -m pip install -r requirements.txt
 
 COPY . .
 
-CMD ["python3", "app.py", "--prod", "--port", "8080"]
+CMD ["uvicorn", "app:main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]

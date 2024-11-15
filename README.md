@@ -69,7 +69,7 @@ If you encounter any problems while contributing to this project, please report 
 Python version `python3.11.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
 
 > [!NOTE]
-> We are currently in the process of refactoring the codebase and updating the documentation. We are working hard to provide a better experience for our users. Only `v0` is available for now.
+> We are currently in the process of refactoring the codebase and updating the documentation. We are working hard to provide a better experience for our users. Thank you for your patience.
 
 ### Clone the Repository
 
@@ -83,7 +83,7 @@ $ git clone git@github.com:<your_user_name>/refinaid.git
 $ cd refinaid/apps/simple-ai
 
 # If you want to access to Chatger
-$ cd refinaid/apps/v0/chatger
+$ cd refinaid/apps/chatger
 ```
 
 
@@ -114,10 +114,14 @@ $ ./scripts/build.sh
 
 # run with uvicorn
 $ uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
-
-# We also support python script to run the app
-$ python app.py --prod --port 8080
 ```
+
+<!-- ### Build Docker Image
+
+```shell
+$ docker build -t refinaid:latest .
+$ docker run -d -p 8080:8080 refinaid:latest
+``` -->
 
 ## 📲 Contact
 

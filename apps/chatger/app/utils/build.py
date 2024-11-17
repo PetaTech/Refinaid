@@ -8,7 +8,7 @@ Version: v0.0.1
 import os
 import gradio as gr
 from fastapi import FastAPI
-from Chatter.GUI.Launch import build_chatter_judge
+from app.gui.launch import build_chatter_judge
 
 def build_and_mount_playground(
         app: FastAPI, 

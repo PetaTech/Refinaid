@@ -16,7 +16,7 @@ from Chatter.GUI.Information import Header as heaader
 from Chatter.Judge.Plot import make_plot
 import pandas as pd
 
-def init_submit_tab(*args, **kwargs):
+def init_submit_tab():
 
     with gr.Tab("Submit Your Code") as submit_tab:
         gr.Markdown(

@@ -9,7 +9,7 @@ import os
 import subprocess
 
 def get_code(txt, selected_homework_name,
-        selected_question_name, *args, **kwargs):
+        selected_question_name):
     with open("tmp.py", "w") as file:
         file.write(txt)
 

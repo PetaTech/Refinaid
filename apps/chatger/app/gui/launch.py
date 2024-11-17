@@ -6,16 +6,12 @@ Version: v0.0.1
 '''
 
 import gradio as gr
-from typing import Any
-from Chatter.GUI.Information import Header as heaader
-from Chatter.GUI.Login import Auth as auth
-from Chatter.GUI.Tab import History as history
-from Chatter.GUI.Tab import Submit as submit
+from app.gui.information import header
+from app.gui.login import auth
+from app.gui.tab import history
+from app.gui.tab import submit
 
-def build_chatter_judge(
-        *args: Any, 
-        **kwargs: Any,
-    ) -> gr.Blocks:
+def build_chatter_judge() -> gr.Blocks:
 
     demo = gr.Blocks(
         title='Chatter Judge',
@@ -23,7 +19,7 @@ def build_chatter_judge(
 
     with demo:
         gr.Markdown(
-            heaader.ee_judge_header
+            header.ee_judge_header
         )
 
         submit_tab = submit.init_submit_tab()
@@ -31,17 +27,17 @@ def build_chatter_judge(
 
         with gr.Tab("Race Bar"):
             gr.Markdown(
-                heaader.race_bar_page_header
+                header.race_bar_page_header
             )
 
         with gr.Tab("Judge Mechanism"):
             gr.Markdown(
-                heaader.judge_mechanism_page_header
+                header.judge_mechanism_page_header
             )
 
         with gr.Tab("Judge Developers"):
             gr.Markdown(
-                heaader.judger_developer_page_header
+                header.judger_developer_page_header
             )
 
     # demo.auth=auth.auth_admin             # temporary disable auth

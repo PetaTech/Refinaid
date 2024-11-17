@@ -11,7 +11,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse, FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi import Form, Depends, HTTPException
-from Chatter.Utils.Build import build_and_mount_playground
+from app.utils.build import build_and_mount_playground
 
 app = FastAPI(
     title="Chatter Judge",
@@ -30,10 +30,6 @@ app.mount(
 templates = Jinja2Templates(
     directory="templates",
 )
-
-# @app.get("/")
-# def read_main():
-#     return {"message": "This is your main app"}
 
 app = build_and_mount_playground(
     app,

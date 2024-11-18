@@ -68,9 +68,6 @@ If you encounter any problems while contributing to this project, please report 
 
 Python version `python3.11.1` with `gradio, scikit-learn, seaborn, pandas, numpy, matplotlib, joblib`
 
-> [!NOTE]
-> We are currently in the process of refactoring the codebase and updating the documentation. We are working hard to provide a better experience for our users. Thank you for your patience.
-
 ### Clone the Repository
 
 Make sure you have `git` installed on your machine. If not, you can download it [here](https://git-scm.com/downloads).
@@ -78,7 +75,11 @@ Make sure you have `git` installed on your machine. If not, you can download it 
 
 ```shell
 $ git clone git@github.com:<your_user_name>/refinaid.git
+```
 
+### Access the Application
+
+```shell
 # If you want to access to Simple AI
 $ cd refinaid/apps/simple-ai
 
@@ -87,7 +88,7 @@ $ cd refinaid/apps/chatger
 ```
 
 
-### Build `venv` for **MacOS**
+### Build `venv` for MacOS/Linux
 
 ```shell
 $ pip3 install virtualenv
@@ -114,14 +115,24 @@ $ ./scripts/build.sh
 
 # run with uvicorn
 $ uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
+
+# And open your browser and visit http://localhost:8080
 ```
 
-<!-- ### Build Docker Image
+> [!NOTE]
+> We have streamlined and unified the file structure to enable developers to easily access and launch SIMPLE-AI and Chatger using a consistent approach. Additionally, we are actively planning to adopt a modular development approach to enhance the application's deployment and functionality.
+
+### Build Docker Image
 
 ```shell
-$ docker build -t refinaid:latest .
-$ docker run -d -p 8080:8080 refinaid:latest
-``` -->
+# For Simple AI
+$ docker build -t refinaid-simple-ai:latest .
+$ docker run -d -p 8080:8080 refinaid-simple-ai:latest
+
+# For Chatger
+$ docker build -t refinaid-chatger:latest .
+$ docker run -d -p 8080:8080 refinaid-chatger:latest
+```
 
 ## 📲 Contact
 

@@ -129,7 +129,7 @@ export default function Header() {
             </div>
           </div>
           <div className="flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <Link href={"https://github.com/LinkScapeOfficial"}>
+            <Link href={"https://github.com/1chooo/refinaid"}>
               <FaGithub className="mr-4 h-6 w-6 text-gh-text-primary hover:text-gh-text-secondary transition-colors" />
             </Link>
             <Link href={"https://discord.gg/WDdvabyKaH"}>

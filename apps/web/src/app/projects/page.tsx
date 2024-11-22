@@ -10,7 +10,26 @@ export const metadata: Metadata = {
   description: "Refinaid's projects",
 };
 
-const features = [
+const simpleAIFeatures = [
+  {
+    name: "Instant Training",
+    description:
+      "Easily integrate with web browsers and train your model in a single click",
+    icon: FaArrowPointer,
+  },
+  {
+    name: "Seamless Deployment",
+    description: "Deploy your service effortlessly, with no hassle",
+    icon: FaCloud,
+  },
+  {
+    name: "Open Source",
+    description: "The source code is fully available to the public",
+    icon: FaGithub,
+  },
+];
+
+const chatgerFeatures = [
   {
     name: "Instant Training",
     description:
@@ -45,7 +64,7 @@ export default function Projects() {
                   SIMPLE-AI
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {features.map((feature) => (
+                  {simpleAIFeatures.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
                       <dt className="inline font-semibold text-gray-900">
                         <feature.icon
@@ -91,7 +110,7 @@ export default function Projects() {
                   Chatger
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {features.map((feature) => (
+                  {chatgerFeatures.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
                       <dt className="inline font-semibold text-gray-900">
                         <feature.icon

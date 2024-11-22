@@ -1,5 +1,7 @@
 import { FaDownload, FaGithub } from "react-icons/fa";
-import { FaArrowPointer, FaCloud } from "react-icons/fa6";
+import { FaArrowPointer, FaCloud, FaRegMessage } from "react-icons/fa6";
+import { TbMessageChatbot } from "react-icons/tb";
+
 import Link from "next/link";
 import NavBar from "@/src/components/header";
 import { Metadata } from "next";
@@ -31,10 +33,10 @@ const simpleAIFeatures = [
 
 const chatgerFeatures = [
   {
-    name: "Instant Training",
+    name: "AI Tutor",
     description:
-      "Easily integrate with web browsers and train your model in a single click",
-    icon: FaArrowPointer,
+      "Code with expert AI tutors and get instant feedback on your code",
+    icon: FaRegMessage,
   },
   {
     name: "Seamless Deployment",

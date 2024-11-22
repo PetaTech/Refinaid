@@ -22,8 +22,8 @@ def build_chatter_judge() -> gr.Blocks:
             header.ee_judge_header
         )
 
-        submit_tab = submit.init_submit_tab()
-        history_tab = history.init_history_tab()
+        submit.init_submit_tab()
+        history.init_history_tab()
 
         with gr.Tab("Race Bar"):
             gr.Markdown(

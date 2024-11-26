@@ -9,7 +9,7 @@ import uvicorn
 
 def main() -> None:
     uvicorn.run(
-        app="Chatter.App.App:app",
+        app="app.main:app",
         host="127.0.0.1", 
         port=5002,
         reload=True,

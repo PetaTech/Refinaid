@@ -19,15 +19,13 @@
   "homepage": "https://github.com/1chooo/refinaid#readme",
   "dependencies": {
     "nextra": "^3.2.4",
-    "nextra-theme-docs": "^2.13.4",
+    "nextra-theme-docs": "^3.2.4",
+    "next": "15.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "overrides": {
-    "next": "^14.2.7"
-  },
   "devDependencies": {
-    "@types/node": "22.8.7",
+    "@types/node": "22.9.3",
     "typescript": "^5.5.4"
   }
 }

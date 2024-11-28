@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { HeartIcon, MarkGithubIcon } from "@primer/octicons-react";
+import { HeartIcon, MarkGithubIcon, ArrowUpRightIcon } from "@primer/octicons-react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -64,10 +64,10 @@ export default function HomeButtons() {
           },
         }}
       >
-        <Link href={"/donate"}>
-          <button className="flex items-center rounded-xl bg-gh-bg px-4 py-3 gh-border text-gh-text-primary hover:bg-gradient-to-br hover:from-red-500/80 hover:to-pink-600/80 hover:text-white transition-all shadow-sm active:scale-95">
-            <HeartIcon className="mr-2 h-5 w-5" />
-            <div className="font-semibold">Donate</div>
+        <Link href={"https://refinaid-docs.vercel.app/"}>
+          <button className="flex items-center justify-between rounded-xl bg-gh-bg px-4 py-3 gh-border text-gh-text-primary hover:bg-gradient-to-br hover:from-red-500/80 hover:to-pink-600/80 hover:text-white transition-all shadow-sm active:scale-95">
+            <div className="font-semibold">Get Started</div>
+            <ArrowUpRightIcon className="ml-2 h-5 w-5" />
           </button>
         </Link>
       </motion.div>

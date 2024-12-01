@@ -23,7 +23,7 @@ export default function Newsletter() {
       </div>
       <div className="col-span-12 lg:col-span-10 lg:col-start-2 mt-3 lg:w-[990px]">
         <form
-          action="https://postal.hackclub.com/subscribe"
+          action="#"
           method="POST"
           acceptCharset="utf-8"
           className="w-full"

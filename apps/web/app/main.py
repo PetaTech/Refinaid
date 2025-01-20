@@ -1,8 +1,10 @@
 import uvicorn
 from fastapi import FastAPI
+from app.infra.web.router import setup_routers
 
 
 app = FastAPI()
+setup_routers(app)
 
 
 @app.get("/")

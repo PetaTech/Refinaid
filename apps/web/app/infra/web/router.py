@@ -34,6 +34,6 @@ def setup_routers(app: FastAPI) -> None:
 
     # Add a route for the favicon
     @app.get("/favicon.ico", include_in_schema=False)
-    def favicon() -> FileResponse:
+    async def favicon() -> FileResponse:
         favicon_path = static_dir / "favicon.ico"
         return FileResponse(favicon_path)

@@ -1,3 +1,5 @@
+import os
+import subprocess
 import time
 import random
 import gradio as gr
@@ -60,22 +62,52 @@ def chatger() -> gr.Blocks:
             with gr.Row():
                 with gr.Column("Question"):
                     with gr.Row():
-                        gr.Dropdown(
+                        selected_homework_name = gr.Dropdown(
                             label="⛳️ Select Homework",
                             value=homework_sessions[0],
                             choices=homework_sessions,
                             interactive=True,
                         )
-                        gr.Dropdown(
+                        selected_question_name = gr.Dropdown(
                             label="📸 Select Question",
                             value=question_sessions[0],
                             choices=question_sessions,
                             interactive=True,
                         )
+                    gr.Markdown("## 👨🏻‍💻 Question Descriptions")
+                    question_description = gr.Markdown(
+                        homework_one_content_sessions[0],
+                        visible=True,
+                    )
                 with gr.Column("Chat Bot"):
                     chatbot = gr.Chatbot(type="messages")
                     msg = gr.Textbox()
                     clear = gr.Button("Clear")
+
+            with gr.Row(
+                variant="compact",
+            ):
+                with gr.Column():
+                    answer_code = gr.Code(
+                        label="Write Your code here",
+                        language="python",
+                        lines=10,
+                        # info="Initial text",
+                    )
+
+                    with gr.Row():
+                        clear_code_btn = gr.Button(
+                            value="🗑️  Clear",
+                            variant="secondary",
+                        )
+                        submit_code_btn = gr.Button(
+                            value="Submit",
+                            variant="primary",
+                        )
+                with gr.Column():
+                    judged_result = gr.Markdown("### Results of your submission: ")
+
+                    chatgpt_suggestion = gr.Markdown("### Review by ChatGPT: ")
 
         with gr.Tab("Race Bar"):
             gr.Markdown("Race Bar")
@@ -104,5 +136,91 @@ def chatger() -> gr.Blocks:
         )
         clear.click(lambda: None, None, chatbot, queue=False)
 
+        submit_background_listener(
+            selected_homework_name,
+            selected_question_name,
+            question_description,
+        )
+
+        submit_code_btn.click(
+            fn=get_code,
+            inputs=[
+                answer_code,
+                selected_homework_name,
+                selected_question_name,
+            ],
+            outputs=[judged_result],
+        )
+
     demo.favicon_path = ROOT_DIR / "static" / "favicon.ico"
+
     return demo
+
+
+def get_question_description(selected_homework_name, selected_question_name):
+    output_components = []
+
+    if selected_homework_name == "HW01" and selected_question_name == "Q1":
+        test_word = gr.Markdown(
+            homework_one_content_sessions[0],
+            visible=True,
+        )
+    elif selected_homework_name == "HW01" and selected_question_name == "Q2":
+        test_word = gr.Markdown(
+            homework_one_content_sessions[1],
+            visible=True,
+        )
+
+    output_components.append(test_word)
+
+    return test_word
+
+
+def submit_background_listener(
+    selected_homework_name,
+    selected_question_name,
+    test_word,
+):
+    selected_question_name.change(
+        fn=get_question_description,
+        inputs=[
+            selected_homework_name,
+            selected_question_name,
+        ],
+        outputs=test_word,
+    )
+
+def get_code(
+    txt,
+    selected_homework_name,
+    selected_question_name,
+):
+    with open("tmp.py", "w") as file:
+        file.write(txt)
+
+    try:
+        output = subprocess.check_output(
+            ["python", "tmp.py"],
+            stderr=subprocess.STDOUT,
+            universal_newlines=True,
+        )
+        print("Script output:")
+        print(output)
+
+        result = judge_question_1(output)
+        return result
+    except subprocess.CalledProcessError as e:
+        print("Error:", e.output)
+        return e.output
+    finally:
+        os.remove("tmp.py")
+
+
+def judge_question_1(output):
+    if output == "Hello World\n":
+        return "### Your code results: AC"
+    elif output == "Hello World":
+        return "### Your code results: AC"
+    else:
+        return "### Your code results: WA"
+

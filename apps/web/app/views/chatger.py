@@ -51,6 +51,16 @@ homework_one_content_sessions = [
     question_two_description,
 ]
 
+question_one_answer = """
+class Solution:
+    def main(self,):
+        print("Hello World")
+                        
+if __name__ == "__main__":
+    Solution.main()
+
+"""
+
 
 def chatger() -> gr.Blocks:
     with gr.Blocks(title="Chatger", theme=gr.themes.Default()) as demo:
@@ -59,7 +69,7 @@ def chatger() -> gr.Blocks:
         with gr.Tab("Submit Your Code"):
             gr.HTML("<h1 align=center>🔥 Show Your Endeavor 🔥</h1>")
 
-            with gr.Row():
+            with gr.Row(equal_height=True):
                 with gr.Column("Question"):
                     with gr.Row():
                         selected_homework_name = gr.Dropdown(
@@ -81,22 +91,20 @@ def chatger() -> gr.Blocks:
                     )
                 with gr.Column("Chat Bot"):
                     chatbot = gr.Chatbot(type="messages")
-                    msg = gr.Textbox()
+                    msg = gr.Textbox(value="Type Something...", label="Message")
                     clear = gr.Button("Clear")
 
-            with gr.Row(
-                variant="compact",
-            ):
+            with gr.Row(equal_height=True):
                 with gr.Column():
                     answer_code = gr.Code(
+                        value=question_one_answer,
                         label="Write Your code here",
                         language="python",
                         lines=10,
-                        # info="Initial text",
                     )
 
                     with gr.Row():
-                        clear_code_btn = gr.Button(
+                        gr.Button(
                             value="🗑️  Clear",
                             variant="secondary",
                         )
@@ -107,7 +115,7 @@ def chatger() -> gr.Blocks:
                 with gr.Column():
                     judged_result = gr.Markdown("### Results of your submission: ")
 
-                    chatgpt_suggestion = gr.Markdown("### Review by ChatGPT: ")
+                    gr.Markdown("### Review by ChatGPT: ")
 
         with gr.Tab("Race Bar"):
             gr.Markdown("Race Bar")
@@ -190,6 +198,7 @@ def submit_background_listener(
         outputs=test_word,
     )
 
+
 def get_code(
     txt,
     selected_homework_name,
@@ -207,8 +216,8 @@ def get_code(
         print("Script output:")
         print(output)
 
-        result = judge_question_1(output)
-        return result
+        if selected_homework_name == "HW01" and selected_question_name == "Q1":
+            return judge_question_1(output)
     except subprocess.CalledProcessError as e:
         print("Error:", e.output)
         return e.output
@@ -223,4 +232,3 @@ def judge_question_1(output):
         return "### Your code results: AC"
     else:
         return "### Your code results: WA"
-

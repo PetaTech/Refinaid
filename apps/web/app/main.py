@@ -8,7 +8,7 @@ setup_routers(app)
 
 
 @app.get("/")
-def hello_world() -> dict[str, str]:
+async def hello_world() -> dict[str, str]:
     return {"message": "Hello, Refinaid"}
 
 

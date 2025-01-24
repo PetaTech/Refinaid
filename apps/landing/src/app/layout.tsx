@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Refinaid",
   description: "Bridging the Gap with AI For Everyone",
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     title: "Refinaid",

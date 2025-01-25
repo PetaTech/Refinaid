@@ -8,8 +8,8 @@ import Footer from "@/components/footer"
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tools | Chun-Ho Hugo Lin (1chooo) | Open Source Enthusiast",
-  description: "A collection of free online tools created by Chun-Ho Hugo Lin (1chooo), inspired by Tsz Hong Tsang (tszhong0411).",
+  title: "Refinaid | Bridging the Gap with AI For Everyone",
+  description: "An open-source learning platform, making AI accessible to everyone, no programming skills needed. Empowering all to explore the future of AI.",
 };
 
 function RootLayout({ children }: { readonly children: React.ReactNode; }) {

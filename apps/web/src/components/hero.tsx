@@ -37,27 +37,20 @@ const Hero = () => {
   return (
     <div className='my-12 space-y-8'>
       <h1 className='text-3xl font-extrabold'>
-        The{' '}
         <span className='bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent'>
-          Best
-        </span>{' '}
-        Online Tools
+          Refinaid
+        </span>{' - '}
+        Bridging the Gap with AI For Everyone
       </h1>
       <p className='leading-6 text-muted-foreground'>
-        Here are some free online tools created by{' '}
-        <Link href="https://1chooo.com" className="font-bold text-black underline dark:text-white">
-          @1chooo
-        </Link>, inspired by{' '}
-        <Link href="https://honghong.me" className="font-bold text-black underline dark:text-white">
-          @tszhong0411
-        </Link>.
+        An open-source learning platform, making AI accessible to everyone, no programming skills needed. Empowering all to explore the future of AI.
       </p>
       <div className='flex gap-4'>
         <Link href='#get-started' className={buttonVariants()}>
           Get started
         </Link>
         <Link
-          href='https://github.com/1chooo/tools'
+          href='https://github.com/1chooo/refinaid'
           className={buttonVariants({ variant: 'outline' })}
         >
           Source code

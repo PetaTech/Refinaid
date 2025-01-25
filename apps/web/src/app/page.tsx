@@ -1,22 +1,22 @@
-'use client'
+"use client"
 
 import { Input } from "@/components/ui/input"
 import {
-  FileTextIcon,
-  PencilLine,
-  Network,
-} from 'lucide-react'
-import type { LucideIcon } from 'lucide-react'
-import React from 'react'
+  CloudRainWind,
+  Ship,
+  Bot,
+} from "lucide-react"
+import type { LucideIcon } from "lucide-react"
+import React from "react"
 import Hero from "@/components/hero";
 import Link from "next/link";
 
 type CardProps = {
-  tools: Tool[]
+  playgrounds: Playground[]
   title: string
 }
 
-type Tool = {
+type Playground = {
   label: string
   link: string
   keywords: string[]
@@ -24,83 +24,85 @@ type Tool = {
   icon: LucideIcon
 }
 
-const TOOLS = [
+const playgrounds = [
   {
-    label: 'Generator',
+    label: "Simple AI",
     links: [
       {
-        label: 'E-mail Signature Generator',
-        link: '/email-signature',
-        keywords: ['Generator', 'Password', 'Random'],
-        color: '#f783ac',
-        icon: PencilLine
-      }
+        label: "Classifier",
+        link: "/#get-started",
+        keywords: ["AI", "Machine Learning", "Model", "Predict"],
+        color: "#fa5252",
+        icon: Ship,
+      },
+      {
+        label: "Plum",
+        link: "/#get-started",
+        keywords: ["AI", "Machine Learning", "Model", "Predict"],
+        color: "#40c057",
+        icon: CloudRainWind,
+      },
+      {
+        label: "Regressions",
+        link: "/#get-started",
+        keywords: ["AI", "Machine Learning", "Model", "Predict"],
+        color: "#fd7e14",
+        icon: CloudRainWind,
+      },
     ]
   },
   {
-    label: 'Network',
+    label: "Chatger",
     links: [
       {
-        label: 'Subnet Calculator',
-        link: '/#get-started',
-        keywords: ['PDF', 'Viewer', 'Document', 'File', 'Document'],
-        color: '#15aabf',
-        icon: Network
-      }
-    ]
-  },
-  {
-    label: 'Editor',
-    links: [
-      {
-        label: 'Markdown Previewer',
-        link: '/markdown-previewer',
-        keywords: ['Word', 'Counter', 'Calculation', 'Text'],
-        color: '#4c6ef5',
-        icon: FileTextIcon
-      }
+        label: "Judge",
+        link: "/#get-started",
+        keywords: ["Python", "Large Language Model", "Leetcode"],
+        color: "#15aabf",
+        icon: Bot
+      },
     ]
   },
 ]
 
 
 function Home() {
-  const [value, setValue] = React.useState('')
+  const [value, setValue] = React.useState("")
 
-  const filter = (tool: Tool): boolean =>
-    tool.label.toLowerCase().includes(value.toLowerCase()) ||
-    tool.keywords.some((keyword) =>
+  const filter = (playground: Playground): boolean =>
+    playground.label.toLowerCase().includes(value.toLowerCase()) ||
+    playground.keywords.some((keyword) =>
       keyword.toLowerCase().includes(value.toLowerCase())
     )
 
   return (
     <div>
       <Hero />
-      <div className='flex flex-col items-start'>
+      <div className="flex flex-col items-start">
         <Input
-          type='text'
+          type="text"
           value={value}
           onChange={(e) => setValue(e.currentTarget.value)}
-          placeholder='Search'
-          className='w-full'
+          placeholder="Search"
+          className="w-full"
         />
         <div
-          id='get-started'
-          className='my-12 flex w-full scroll-mt-20 flex-col gap-6'
+          id="get-started"
+          className="my-12 flex w-full scroll-mt-20 flex-col gap-6"
         >
           {value
-            ? TOOLS.filter((t) => t.links.some((tool) => filter(tool))).map(
+            ? playgrounds.filter((t) => t.links.some((playground) => filter(playground))).map(
               (t) => {
                 const { label, links } = t
-                const filtered = links.filter((tool) => filter(tool))
+                const filtered = links.filter((playground) => filter(playground))
 
-                return <Card key={label} tools={filtered} title={label} />
+                return <Card key={label} playgrounds={filtered} title={label} />
               }
             )
-            : TOOLS.map((tool) => {
-              const { label, links } = tool
+            : playgrounds.map((playground) => {
+              const { label, links } = playground
 
-              return <Card key={label} tools={links} title={label} />
+              return <Card key={label} playgrounds={links} title={label} />
             })}
         </div>
       </div>
@@ -108,29 +110,29 @@ function Home() {
   );
 };
 
-function Card({ tools, title }: CardProps) {
+function Card({ playgrounds, title }: CardProps) {
   return (
-    <div className='w-full rounded-lg border p-4'>
+    <div className="w-full rounded-lg border p-4">
       <div>{title}</div>
-      <div className='mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3'>
-        {tools.map((tool) => (
-          <Item key={tool.label} {...tool} />
+      <div className="mt-4 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        {playgrounds.map((playground) => (
+          <Item key={playground.label} {...playground} />
         ))}
       </div>
     </div>
   )
 }
 
-function Item({ color, icon, label, link }: Tool) {
+function Item({ color, icon, label, link }: Playground) {
   const Icon = icon
 
   return (
     <Link
       href={link}
-      className='flex flex-col items-center justify-center rounded-lg bg-accent p-4 text-center transition-colors duration-300 hover:bg-accent-highlight'
+      className="flex flex-col items-center justify-center rounded-lg bg-accent p-4 text-center transition-colors duration-300 hover:bg-accent-highlight"
     >
       <Icon color={color} size={32} />
-      <div className='mt-1.5'>{label}</div>
+      <div className="mt-1.5">{label}</div>
     </Link>
   )
 }

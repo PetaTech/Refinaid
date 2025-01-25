@@ -5,11 +5,14 @@ import ThemeProvider from "@/components/theme/theme-provider";
 import Header from "@/components/header";
 import Footer from "@/components/footer"
 
-import "./globals.css";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Refinaid | Bridging the Gap with AI For Everyone",
   description: "An open-source learning platform, making AI accessible to everyone, no programming skills needed. Empowering all to explore the future of AI.",
+  icons: {
+    shortcut: "/favicon.ico",
+  },
 };
 
 function RootLayout({ children }: { readonly children: React.ReactNode; }) {

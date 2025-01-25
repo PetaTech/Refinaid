@@ -51,12 +51,19 @@ const Footer = () => {
             href="/#"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white">Blog</Link>
           <Link
-            href="https://github.com/1chooo/tools/issues"
+            href="https://github.com/1chooo/refinaid/issues"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
             target='_blank'
             rel='noreferrer noopener'
             aria-label="Feedback"
           >Feedback</Link>
+          <Link
+            href="https://refinaid-docs.vercel.app/"
+            className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
+            target='_blank'
+            rel='noreferrer noopener'
+            aria-label="Feedback"
+          >Docs</Link>
         </div>
         <div className="flex flex-col gap-2">
           <div className="font-medium">PRODUCT</div>
@@ -80,7 +87,7 @@ const Footer = () => {
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
           >Terms</Link>
           <Link
-            href="https://github.com/1chooo/tools/blob/main/LICENSE"
+            href="https://github.com/1chooo/refinaid/blob/main/LICENSE"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
           >License</Link>
         </div>

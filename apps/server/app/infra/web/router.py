@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from app.adapters.controllers.mock import mock_routes
 from app.views.simple_ai import simple_ai
 from app.views.chatger import chatger
+from app.adapters.controllers.dataset import dataset_routes
 
 
 def setup_routers(app: FastAPI) -> None:
@@ -20,3 +21,4 @@ def setup_routers(app: FastAPI) -> None:
     gr.mount_gradio_app(app, simple_ai(), path="/simple-ai")
     gr.mount_gradio_app(app, chatger(), path="/chatger")
     app.include_router(mock_routes)
+    app.include_router(dataset_routes)

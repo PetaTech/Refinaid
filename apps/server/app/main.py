@@ -29,6 +29,15 @@ async def favicon() -> FileResponse:
     return FileResponse(favicon_path)
 
 
+@app.get("/favicon-path", include_in_schema=False)
+async def favicon_path() -> FileResponse:
+    return {
+        "root_dir": ROOT_DIR,
+        "static_dir": ROOT_DIR / "static",
+        "favicon_path": ROOT_DIR / "static" / "favicon.ico",
+    }
+
+
 if __name__ == "__main__":
     uvicorn.run(
         "app.main:app",

@@ -23,9 +23,13 @@ function Header() {
           />
         </Link>
         <nav className="flex-1 flex justify-center mt-2">
-          <div className="gap-10 text-lg font-medium hidden sm:flex">
-            <Link href="/pricing">Pricing</Link>
+          <div className="gap-5 text-lg font-medium hidden sm:flex">
             <Link
+              href="/pricing"
+              className="px-3 py-2 rounded-md transition-colors hover:bg-primary/10"
+            >Pricing</Link>
+            <Link
+              className="px-3 py-2 rounded-md transition-colors hover:bg-primary/10"
               href="https://refinaid-docs.vercel.app"
               target='_blank'
               rel='noreferrer noopener'

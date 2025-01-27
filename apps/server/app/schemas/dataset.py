@@ -1,8 +1,59 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
+from typing import Literal
 
 
 class Titanic(BaseModel):
-    parameters: list[str]
+    """Titanic dataset Columns.
+    args:
+        passenger_id: int
+        survived: int
+        p_class: int
+        name: str
+        sex: str
+        age: float
+        sib_sp: int
+        parch: int
+        ticket: str
+        fare: float
+        cabin: str
+        embarked: str
+
+    see:
+        https://www.kaggle.com/datasets/yasserh/titanic-dataset/data
+    """
+
+    passenger_id: int | None = Field(alias="PassengerId")
+    survived: int | None = Field(alias="Survived")
+    p_class: int | None = Field(alias="Pclass")
+    name: str | None = Field(alias="Name")
+    sex: Literal["male", "female"] | None = Field(alias="Sex")
+    age: float | None = Field(alias="Age")
+    sib_sp: int | None = Field(alias="SibSp")
+    parch: int | None = Field(alias="Parch")
+    ticket: str | None = Field(alias="Ticket")
+    fare: float | None = Field(alias="Fare")
+    cabin: str | None = Field(alias="Cabin")
+    embarked: str | None = Field(alias="Embarked")
+
+
+class TitanicNumeric(BaseModel):
+    """Titanic dataset Columns (Numeric).
+
+    args:
+        passenger_id: int
+        p_class: int
+        age: float
+        sib_sp: int
+        parch: int
+        fare: float
+    """
+
+    passenger_id: int = Field(alias="PassengerId")
+    p_class: int = Field(alias="Pclass")
+    age: float = Field(alias="Age")
+    sib_sp: int = Field(alias="SibSp")
+    parch: int = Field(alias="Parch")
+    fare: float = Field(alias="Fare")
 
 
 def get_dataset_x_columns(dataset: str) -> list:

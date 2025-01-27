@@ -2,6 +2,8 @@ import numpy as np
 import gradio as gr
 import matplotlib.pyplot as plt
 
+from app.schemas.dataset import Titanic
+from app.utils.dataset import get_model_fields_with_aliases
 from app.config.settings.base import ROOT_DIR
 
 
@@ -45,18 +47,7 @@ def simple_ai() -> gr.Blocks:
                         interactive=True,
                     )
                     parameters = gr.Dropdown(
-                        choices=[
-                            "PassengerId",
-                            "Pclass",
-                            "Sex",
-                            "Age",
-                            "SibSp",
-                            "Parch",
-                            "Ticket",
-                            "Fare",
-                            "Cabin",
-                            "Embarked",
-                        ],
+                        choices=get_model_fields_with_aliases(Titanic),
                         value=[
                             "PassengerId",
                             "Pclass",

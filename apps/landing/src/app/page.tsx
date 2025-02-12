@@ -1,6 +1,6 @@
 import Leaders from "@/components/leaders";
 import Newsletter from "@/components/newsletter";
-import NavBar from "@/components/header";
+import Header from "@/components/header";
 import { Metadata } from "next";
 import Sponsors from "@/components/sponsors";
 import HomeTitle from "@/components/home-animations/home-title";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Index() {
   return (
     <>
-      <NavBar />
+      <Header />
       <div
         className="absolute inset-0 grid grid-cols-2 -space-x-12 opacity-40 dark:opacity-20 sm:-space-x-52"
         style={{ zIndex: -1 }}
@@ -30,7 +30,6 @@ export default function Index() {
         <Leaders />
         <Newsletter />
       </div>
-
       <Sponsors />
     </>
   );

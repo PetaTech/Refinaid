@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import NavBar from "@/components/header";
+import Header from "@/components/header";
 import { Metadata } from "next";
 import { FaGithub } from "react-icons/fa";
 
@@ -57,7 +57,7 @@ const people = [
 export default function Team() {
   return (
     <>
-      <NavBar />
+      <Header />
       {/*<div*/}
       {/*  className={*/}
       {/*    "background-dotted w-screen fixed top-0 left-0 h-screen -z-20 dark:opacity-10"*/}

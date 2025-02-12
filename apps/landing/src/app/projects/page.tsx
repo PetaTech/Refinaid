@@ -3,7 +3,7 @@ import { FaArrowPointer, FaCloud, FaRegMessage } from "react-icons/fa6";
 import { TbMessageChatbot } from "react-icons/tb";
 
 import Link from "next/link";
-import NavBar from "@/components/header";
+import Header from "@/components/header";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -53,7 +53,7 @@ const chatgerFeatures = [
 export default function Projects() {
   return (
     <>
-      <NavBar />
+      <Header />
       <div className="mb-4 mt-12 overflow-hidden bg-white sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">

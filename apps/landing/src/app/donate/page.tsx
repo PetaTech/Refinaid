@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "@/components/header";
+import Header from "@/components/header";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Donate() {
   return (
     <>
-      <NavBar />
+      <Header />
       <div className="h-512px screen flex flex-col mt-16">
         <iframe
           src="https://bank.hackclub.com/donations/start/linkscape"

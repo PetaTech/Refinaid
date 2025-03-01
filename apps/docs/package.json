@@ -1,6 +1,6 @@
 {
   "name": "refinaid-docs",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Refinaid documentation",
   "scripts": {
     "dev": "next dev",

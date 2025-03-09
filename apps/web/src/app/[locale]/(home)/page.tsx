@@ -6,6 +6,7 @@ import { Particles } from "@/components/magicui/particles";
 import GetStarted from "@/components/section/get-started";
 import OpenSourceBadge from "@/components/section/open-source-badge";
 import Reviews from "@/components/section/reviews";
+import Features from "@/components/section/features";
 
 export default function HomePage() {
   return (
@@ -22,9 +23,8 @@ export default function HomePage() {
           <GetStarted />
         </div>
       </main>
-      <div className="pb-24">
-        <Reviews />
-      </div>
+      <Reviews />
+      <Features />
     </>
   );
 }

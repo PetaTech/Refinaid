@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1chooo/refinaid.git"
+    "url": "git+https://github.com/PetaTech/refinaid.git"
   },
   "author": "Shu Ding <g@shud.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1chooo/refinaid/issues"
+    "url": "https://github.com/PetaTech/refinaid/issues"
   },
-  "homepage": "https://github.com/1chooo/refinaid#readme",
+  "homepage": "https://github.com/PetaTech/refinaid#readme",
   "dependencies": {
     "nextra": "^3.2.4",
     "nextra-theme-docs": "^3.2.4",

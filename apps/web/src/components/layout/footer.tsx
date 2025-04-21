@@ -22,7 +22,7 @@ const Footer = () => {
         </span>
         <div className="flex items-center justify-center gap-3">
           <Link
-            href="https://github.com/1chooo"
+            href="https://github.com/PetaTech"
             className="cursor-pointer text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
             target="_blank"
             rel="noreferrer noopener"
@@ -31,7 +31,7 @@ const Footer = () => {
             <Github />
           </Link>
           <Link
-            href="mailto:hugo970217@gmail.com"
+            href="mailto:official@lovedbymen.com"
             className="ml-1 cursor-pointer text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
             target="_blank"
             rel="noreferrer noopener"
@@ -51,7 +51,7 @@ const Footer = () => {
             Blog
           </Link>
           <Link
-            href="https://github.com/1chooo/refinaid/issues"
+            href="https://github.com/PetaTech/refinaid/issues"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
             target="_blank"
             rel="noreferrer noopener"
@@ -99,7 +99,7 @@ const Footer = () => {
             Terms
           </Link>
           <Link
-            href="https://github.com/1chooo/refinaid/blob/main/LICENSE"
+            href="https://github.com/PetaTech/refinaid/blob/main/LICENSE"
             className="text-sm text-[#00000070] dark:text-[#ffffff70] transition-all hover:text-black dark:hover:text-white"
           >
             License

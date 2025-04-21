@@ -1,4 +1,4 @@
-<a href="https://1chooo.com">
+<a href="https://lovedbymen.com">
   <img alt="Refinaid Source Code" src="./.github/banner-thin.png">
 </a>
 
@@ -7,8 +7,8 @@
 
 <p align="center">
   <img alt="" src="https://img.shields.io/pypi/pyversions/gradio.svg?style=for-the-badge&labelColor=000" />
-  <img alt="" src="https://img.shields.io/github/license/1chooo/refinaid?style=for-the-badge&labelColor=000" />
-  <img src="https://img.shields.io/github/stars/1chooo/refinaid?style=for-the-badge&labelColor=000" alt="Novel.sh's GitHub repo" />
+  <img alt="" src="https://img.shields.io/github/license/PetaTech/refinaid?style=for-the-badge&labelColor=000" />
+  <img src="https://img.shields.io/github/stars/PetaTech/refinaid?style=for-the-badge&labelColor=000" alt="Novel.sh's GitHub repo" />
 </p>
 
 <p align="center">
@@ -39,13 +39,13 @@ $ git clone git@github.com:<your_workspace_name>/refinaid.git
 ### Setting Upstream Remote:
 
 ```shell
-$ git remote add upstream git@github.com:1chooo/refinaid.git
+$ git remote add upstream git@github.com:PetaTech/refinaid.git
 
 $ git remote -v
 origin  git@github.com:<your_user_name>/refinaid.git (fetch)
 origin  git@github.com:<your_user_name>/refinaid.git (push)
-upstream        git@github.com:1chooo/refinaid.git (fetch)
-upstream        git@github.com:1chooo/refinaid.git (push)
+upstream        git@github.com:PetaTech/refinaid.git (fetch)
+upstream        git@github.com:PetaTech/refinaid.git (push)
 ```
 ### Pull Requests:
 
@@ -53,7 +53,7 @@ If you have any valuable ideas to contribute, please create a pull request and p
 
 ### Issue Reporting:
 
-If you encounter any problems while contributing to this project, please report the issues in the [refinaid/issues](https://github.com/1chooo/refinaid/issues) section.
+If you encounter any problems while contributing to this project, please report the issues in the [refinaid/issues](https://github.com/PetaTech/refinaid/issues) section.
 
 > [!IMPORTANT]  
 > Remember to synchronize and update your repository before starting to write code each time.
@@ -136,20 +136,20 @@ $ docker run -d -p 8080:8080 refinaid-chatger:latest
 
 ## 📲 Contact
 
-> **Hugo ChunHo Lin**
+> **Abbass Sharara**
 > 
 > <aside>
->   📩 E-mail: <a href="mailto:hugo970217@gmail.com">hugo970217@gmail.com</a>
+>   📩 E-mail: <a href="mailto:official@lovedbymen.com">official@lovedbymen.com</a>
 > <br>
->   🧳 Linkedin: <a href="https://www.linkedin.com/in/1chooo/">Hugo ChunHo Lin</a>
+>   🧳 Linkedin: <a href="https://www.linkedin.com/in/Abbass-Sharara/">Abbass Sharara</a>
 > <br>
->   👨🏻‍💻 GitHub: <a href="https://github.com/1chooo">1chooo</a>
+>   👨🏻‍💻 GitHub: <a href="https://github.com/PetaTech">PetaTech</a>
 >    
 > </aside>
 
 ## 🪪 License
 
-Released under [Apache-2.0 license](./LICENSE) by [Hugo ChunHo Lin](https://github.com/1chooo).
+Released under [Apache-2.0 license](./LICENSE) by [Abbass Sharara](https://github.com/PetaTech).
 
 This software can be modified and reused without restriction.
 The original license must be included with any copies of this software.

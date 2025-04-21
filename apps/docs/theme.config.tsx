@@ -15,7 +15,7 @@ export default {
     </>
   ),
   project: {
-    link: 'https://github.com/1chooo/refinaid',
+    link: 'https://github.com/PetaTech/refinaid',
   },
-  docsRepositoryBase: 'https://github.com/1chooo/refinaid',
+  docsRepositoryBase: 'https://github.com/PetaTech/refinaid',
 } as DocsThemeConfig;

@@ -43,7 +43,7 @@ export function AppHeader({ title }: AppHeaderProps) {
     email: "",
     userName: "",
     role: "user",
-    avatar: "https://github.com/1chooo.png",
+    avatar: "https://github.com/PetaTech.png",
   });
 
   useEffect(() => {

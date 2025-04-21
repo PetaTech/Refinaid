@@ -3,7 +3,7 @@ name = "refinaid"
 version = "0.5.0"
 description = ""
 authors = [
-    {name = "Hugo ChunHo Lin",email = "hugo970217@gmail.com"}
+    {name = "Abbass Sharara",email = "official@lovedbymen.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"

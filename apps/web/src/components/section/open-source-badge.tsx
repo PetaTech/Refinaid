@@ -12,7 +12,7 @@ export default function OpenSourceBadge() {
         )}
       >
         <Link
-          href="https://github.com/1chooo/refinaid/stargazers"
+          href="https://github.com/PetaTech/refinaid/stargazers"
           target="_blank"
           rel="noreferrer"
           aria-label="Star on GitHub"

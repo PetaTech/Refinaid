@@ -6,7 +6,7 @@ const schema = z.object({
 
 export async function getGitHubStars() {
   const res = await fetch(
-    "https://api.github.com/repos/1chooo/refinaid",
+    "https://api.github.com/repos/PetaTech/refinaid",
     { next: { revalidate: 600 } }, // 10min
   );
   const json = await res.json();

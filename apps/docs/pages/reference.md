@@ -1,6 +1,6 @@
 # Reference
 
-## [Vote] Our Project Web App Template [\#92](https://github.com/1chooo/refinaid/issues/92)
+## [Vote] Our Project Web App Template [\#92](https://github.com/PetaTech/refinaid/issues/92)
 
 
 1. [Online University Studies Website Template](https://nicepage.com/st/981647/online-university-studies-website-template)

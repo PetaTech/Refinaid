@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "An open-source learning platform, making AI accessible to everyone, no programming skills needed. Empowering all to explore the future of AI",
   openGraph: {
-    url: "https://refinaid.vercel.app",
+    url: "https://refinaid.lovedbymen.com",
     type: "website",
     siteName: "Refinaid",
     title: "Refinaid | Bridging the Gap with AI For Everyone",

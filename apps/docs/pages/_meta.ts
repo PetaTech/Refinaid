@@ -11,13 +11,13 @@ export default {
   // "contact": {
   //   "title": "Contact ↗",
   //   "type": "page",
-  //   "href": "https://refinaid.vercel.app",
+  //   "href": "https://refinaid.lovedbymen.com",
   //   "newWindow": true
   // },
   "demo": {
     "title": 'Home ↗',
     "type": 'page',
-    "href": 'https://refinaid.vercel.app',
+    "href": 'https://refinaid.lovedbymen.com',
     "newWindow": true
   },
 }

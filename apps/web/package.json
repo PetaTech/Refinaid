@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@workspace/ui": "workspace:*",
     "@hookform/resolvers": "^3.10.0",
     "@next/third-parties": "^15.1.6",
     "@primer/octicons-react": "^19.15.0",
@@ -32,6 +31,7 @@
     "@radix-ui/react-toast": "^1.2.5",
     "@radix-ui/react-tooltip": "^1.1.7",
     "@tanstack/react-table": "^8.20.6",
+    "@workspace/ui": "workspace:*",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "firebase": "^11.2.0",
@@ -47,18 +47,19 @@
     "react-hook-form": "^7.54.2",
     "react-icons": "^5.4.0",
     "recharts": "^2.15.1",
+    "source-map": "^0.7.4",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.24.1",
     "zustand": "^4.5.6"
   },
   "devDependencies": {
-    "@workspace/eslint-config": "workspace:^",
-    "@workspace/typescript-config": "workspace:*",
     "@eslint/eslintrc": "^3.2.0",
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "@workspace/eslint-config": "workspace:^",
+    "@workspace/typescript-config": "workspace:*",
     "eslint": "^9.19.0",
     "eslint-config-next": "15.1.6",
     "postcss": "^8.5.1",
